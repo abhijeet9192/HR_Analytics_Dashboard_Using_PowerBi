@@ -11,21 +11,21 @@ Steps followed:
 Download the dataset from here
 
 1. Data Gathering:
-
 Importing raw data .csv file into Power BI & transform to Power Query editor for cleaning and data processing.
-2. Data cleaning:
 
+2. Data cleaning:
 Cleaning is done by removing empty column, removing duplicates, errors etc.
 Replacing values in column with proper values and naming.
 Detecting data type of every column, using the auto detect data type function in Power query editor.
-3. Data processing:
 
+3. Data processing:
 In the Power Query editor, creating new column called "AttritionCount" by using conditional column feature in add column which is created on the basis of certain condition like (IF attrition = 'Yes' then 1, Else 0).
 This new column is further used for creating different KPI's and charts.Then creating the Attrition Rate by applying DAX queries, adding new measure (Attrition Rate = SUM([AttritionCount]))/SUM([Employeecount])) in %.
-4. Data analysis:
 
+5. Data analysis:
 Analysis involves the creation of a range of visual representations, including bar charts, key performance indicators (KPIs), table charts, pie charts, and other relevant visualizations.
 These tools are utilized to gain insights and present data in a comprehensive and easily understandable manner.
+
 Key Questions of the Dashboard :
 What is the Total Employee Count ?
 What is the employee's Average Age & Average Salary ?
@@ -42,6 +42,7 @@ Donut chart and Pie Chart
 Bar Chart and Cluster chart 📊
 KPI(Key Performing Indicators) and Slicer.
 Filters: Used to filter data according to different education fields.
+
 Key Insights Summary:
 Total Employees: The organization has grown significantly, currently employing 1470 individuals, indicating substantial growth and scale.
 Attrition Analysis: A total of 237 employees left the organization. Among them, 150 were male, and 87 were female, indicating a higher attrition rate among males.
